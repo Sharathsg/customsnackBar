@@ -6,6 +6,8 @@ import android.widget.Button
 import com.sample.basiccustomlib.databinding.ActivityMainBinding
 import com.sample.cutomsnackbar.CustomSnackBar
 
+//import com.sample.cutomsnackbar.CustomSnackBar
+
 class MainActivity : AppCompatActivity() {
     lateinit var binding :ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,10 +17,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
 
         binding.clButton.setOnClickListener {
-
             CustomSnackBar.SnackSg(it,"Success","")
 
         }
+
+
 
 
 
